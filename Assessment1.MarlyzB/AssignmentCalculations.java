@@ -6,7 +6,7 @@ public class AssignmentCalculations{
           Scanner scanner = new Scanner(System.in); //system.in catch input from user 
           
         //F1:
-          System.out.print("Enter assignemt name: ");  
+          System.out.print("Enter assignemt name: ");  //Allow to input assignment name
           String name = scanner.nextLine();  //receive and store             
                       
           
@@ -22,8 +22,9 @@ public class AssignmentCalculations{
                      if (studentMark >= 0.0 && studentMark <= 30.0){
                         studentMarks.add(studentMark);
                       break;
+                        //F3
                     } else {            
-                        System.out.print("Error, Write a valid number :");
+                        System.out.print("Error, Write a valid number :"); //Display error message
 
                     }
                     }catch (NumberFormatException e){
