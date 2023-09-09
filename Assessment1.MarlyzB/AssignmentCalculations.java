@@ -7,7 +7,7 @@ public class AssignmentCalculations{
           
         //F1:
           System.out.print("Enter assignemt name: ");  //Allow to input assignment name
-          String name = scanner.nextLine();  //receive and store             
+          String AssignmentName = scanner.nextLine();  //receive and store             
                       
           
     
@@ -32,5 +32,7 @@ public class AssignmentCalculations{
             }
         }
         }
-    }
+        //F4 Print Student Name
+        System.out.println("Assignment Name: " + AssignmentName);
+    }   
 }
