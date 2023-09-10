@@ -7,7 +7,7 @@ public class AssignmentCalculations{
           
         //F1:
           System.out.print("Enter assignemt name: ");  //Allow to input assignment name
-          String AssignmentName = scanner.nextLine();  //receive and store             
+          String assignmentName = scanner.nextLine();  //receive and store             
                       
           
     
@@ -33,6 +33,41 @@ public class AssignmentCalculations{
         }
         }
         //F4 Print Student Name
-        System.out.println("Assignment Name: " + AssignmentName);
+        System.out.println("Assignment Name: " + assignmentName);
+       
+    //f5: print highest and lowest marks
+    int highestMark = locateHighestMark(studentMarks);
+        System.out.println("Highest Mark: "+ highestMark);
+    
+    int lowestMark = locateLowestMark(studentMarks);
+        System.out.println ("Lowest Mark: "+ lowestMark);
+        
     }   
-}
+    // f5 method to locate the highest mark
+    private static int locateHighestMark(ArrayList<Integer>studentMarks){
+        int highestMark = -1;
+        for (int mark : studentMarks){
+             if (mark > highestMark){
+                 highestMark = mark;
+             }
+        }
+        return highestMark;
+        }
+    
+        
+    
+    // f5 method to locate the lowest mark    
+    private static int locateLowestMark(ArrayList<Integer>marks){
+         int lowestMark = 31; 
+         for (int mark : marks){
+         if (mark < lowestMark){
+             lowestMark = mark;
+              }
+         }
+         return lowestMark;
+    }
+    
+    
+    }
+    
+    

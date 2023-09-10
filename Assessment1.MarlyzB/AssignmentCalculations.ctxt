@@ -2,4 +2,8 @@
 comment0.target=AssignmentCalculations
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=studentMarks
+comment2.target=int\ locateHighestMark(java.util.ArrayList)
+comment3.params=marks
+comment3.target=int\ locateLowestMark(java.util.ArrayList)
+numComments=4
